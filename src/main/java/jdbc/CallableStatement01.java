@@ -76,7 +76,8 @@ public class CallableStatement01 {
         //5. Adım: Çalıştırmak için execute() methodunu kullan.
         cst2.execute();
 
-        //6. Adım: Sonucu çağırmak için return data tipine göre "get" methodllaından uygun olanı kullan.
+        //6. Adım: Sonucu çağırmak için return data tipine göre "get" methodlarından uygun olanı kullan.
+        //getInt() burada exception verdi, o nedenle getBigDecimal() kullanıyoruz
         System.out.println(cst2.getBigDecimal(1));
     }
 }
