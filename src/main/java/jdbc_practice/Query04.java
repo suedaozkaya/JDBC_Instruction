@@ -13,10 +13,10 @@ public class Query04 {
         //Statement st = con.createStatement();
 
         PreparedStatement ps = con.prepareStatement("insert into ogrenciler values(?, ?, ?, ?)");
-        ps.setInt(0,200);
-        ps.setString(1,"Veli Can");
-        ps.setString(2,"12");
-        ps.setString(3,"E");
+        ps.setInt(1,200);
+        ps.setString(2,"Veli Can");
+        ps.setString(3,"12");
+        ps.setString(4,"E");
 
         ps.executeUpdate();
 
